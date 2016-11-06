@@ -1,18 +1,13 @@
-#include<iostream.h>
+#include<iostream>
 
 using namespace std;
 
 int main()
 {
-    int num, i, j, size =0;
+    int num, i, j, k, size =0;
     cout << "Enter a number - ";
     cin >> num;
-    int num1 = num;
-    for(i = 0 ; num1 >= 0 ; i++)
-    {
-        size = size + 1;
-        num1 /= 10;
-    }  
+    size = num/2;
     int a[size], sum;
     for(i = 0 ; i< size ; i++) // give 1 as value to all the array elements
     {
@@ -43,7 +38,6 @@ int main()
                 sum += 1;
             }
         }
-        
         if( j == num )
         {
            cout<< a[0];
